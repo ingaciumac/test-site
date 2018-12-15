@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- adding styles with STYLE TAG inside html head-->
+	<style type="text/css">
+		h1 {
+			color: orange;
+			font-size: 50px;
+		}
+/*The above change wont be applied because it is overwriten below:*/
+
+		h1 {
+			color: red;
+			font-size: 70px;
+		}
+
+/*# name can overwrite a class name, as wel class name can overwrite a atribute name*/
+		#first {
+			text-decoration: none;
+		}
+		.different {
+			text-decoration: underline;
+		}
+	
+	</style>
+</head>
+<body>
+ <!-- in-line style of a style atribute take spriority/preferences ofer an id -->
+	<h1>Heading 1 - 1</h1>
+	<h1 class="different" id="first" style="font-size:60px">Heading 1 - 2</h1>
+	<h1>Heading 1 - 3</h1>
+
+<!-- Adding styles with STYLE ATTRIBUTE inside htmp body-->
+	<h2 style="color: green; font-size: 50px;">Heading 2 - 1</h2>
+	<h2 class="different" style="color: green; font-size:50px;">Heading 2 - 2</h2>
+	<h2 style="color: green; font-size: 50px;">Heading 2 - 3</h2>
+
+</body>
+</html>
